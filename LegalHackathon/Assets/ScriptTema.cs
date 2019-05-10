@@ -5,12 +5,12 @@ using UnityEngine;
 public class ScriptTema : MonoBehaviour
 {
     string nameTema = "";
-    private bool abierto = false;
+    private bool abierto = true;
     // Start is called before the first frame update
     void Start()
     {
         DameDatitos("Juridico");
-        MostrarOcultarHilosTema(abierto);
+        MostrarOcultarHilosTema();
     }
 
     // Update is called once per frame
@@ -26,17 +26,27 @@ public class ScriptTema : MonoBehaviour
      * 
      * */
 
-    public void DameDatitos(string nombreTema) { this.name = nombreTema; nameTema = nombreTema; }
+    public void DameDatitos(string nombreTema) {
+        this.name = "Tema"+nombreTema;
+        nameTema = nombreTema;
 
-    public void MostrarOcultarHilosTema(bool abrir)
+    }
+    /*
+     * Una vez hayamos instanciado todos los prefabs de los hilos, recorreremos el contenedor para ocultar los prefabs hilos
+     * 
+     * 
+     * */
+    public void MostrarOcultarHilosTema()
     {
-        GameObject[] hilos = GameObject.FindGameObjectsWithTag("contenedorHilos");
-
-        foreach (GameObject hilo in hilos)
+        abierto = !abierto;
+        GameObject contenedor = GameObject.FindWithTag("contenedorHilos");
+        
+        foreach(Transform children in contenedor.transform)
         {
-            if (hilo.name.Contains(this.name))
-                hilo.SetActive(abrir);
+            if (children.name.StartsWith(nameTema/*.Substring(4, nameTema.Length - 4))*/))
+                children.gameObject.SetActive(abierto);
         }
+        
     }
 
 
