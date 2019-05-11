@@ -19,11 +19,14 @@ public class AppController : MonoBehaviour
 
     public Text nombreHiloPanelHilo;
     private string _miNum;
+
+    public Animator animLateral;
     // Start is called before the first frame update
     void Start()
     {
         _miNum = "875421 Valencia";
-        panelPrincipal.SetActive(true);
+        panelLogin.SetActive(true);
+        panelPrincipal.SetActive(false);
         panelHilo.SetActive(false);
         panelResponder.SetActive(false);
         panelComentar.SetActive(false);
@@ -101,6 +104,17 @@ public class AppController : MonoBehaviour
     public void AbriCerrarPanelHilo(bool abrir)
     {
         panelNewHilo.SetActive(abrir);
+    }
+
+    public void AbrirMenuLateral()
+    {
+        animLateral.SetTrigger("open");
+    }
+
+    public void CerrarMenuLateral()
+    {
+        animLateral.SetTrigger("close");
+        animLateral.SetTrigger("idle");
     }
 
 }

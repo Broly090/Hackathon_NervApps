@@ -84,7 +84,11 @@ public class BackEnd : MonoBehaviour
 
         //url = "http://46.183.118.202:6969/Legalhackathon/" + tema + "/" + hilo + ".txt";
         //url = "http://46.183.118.202:6969/Legalhackathon/" + tema + "/write.php";
-        url = "http://nerv.legalhackathon.es/"+_tema+"/"+_hilo+"/write.php";
+
+
+        // ESTE VA
+        //url = "http://nerv.legalhackathon.es/"+_tema+"/"+_hilo+"/write.php";
+        url = "http://nerv.legalhackathon.es/write.php";
 
         conversacion += "\n Éscúpeme en la boocaaaáaaa";
         Debug.Log(url);
@@ -114,8 +118,11 @@ public class BackEnd : MonoBehaviour
 
         Debug.Log(_hilo);
 
-        WWW www = new WWW(url+"?txt="+ conversacion+"&file="+_numConvers+".txt");
-        //WWW www = new WWW(url + "?txt=" + conversacion);
+        // ESTE VA
+        //WWW www = new WWW(url+"?txt="+ conversacion+"&file="+_numConvers+".txt");
+
+        WWW www = new WWW(url + "?txt=" + conversacion + "&file=" + _numConvers + ".txt&tema=" +_tema+ "&hilo="+_hilo);
+
         yield return www;
 
 
