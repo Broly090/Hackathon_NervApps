@@ -8,6 +8,8 @@ public class AppController : MonoBehaviour
 
     public GameObject panelLogin, panelPrincipal, panelHilo, panelResponder, panelComentar;
 
+    public GameObject panelNewHilo;
+
     public Transform contenedorTemasHilos;
     public GameObject prefabTema;
     public GameObject prefabHilo;
@@ -25,6 +27,7 @@ public class AppController : MonoBehaviour
         panelHilo.SetActive(false);
         panelResponder.SetActive(false);
         panelComentar.SetActive(false);
+        panelNewHilo.SetActive(false);
     }
 
     // Update is called once per frame
@@ -93,6 +96,11 @@ public class AppController : MonoBehaviour
     {
         panelComentar.SetActive(abrir);
         if (abrir) panelComentar.GetComponent<ScriptNewComentario>().MisDatos(_miNum);
+    }
+
+    public void AbriCerrarPanelHilo(bool abrir)
+    {
+        panelNewHilo.SetActive(abrir);
     }
 
 }
