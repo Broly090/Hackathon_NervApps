@@ -7,7 +7,7 @@ using System.Text;
 public class BackEnd : MonoBehaviour
 {
 
-    private string _tema, _hilo, url, conversacion;
+    private string _tema, _hilo, url, url2, conversacion;
     private int _numConvers;
     private TextAsset conversacionText;
 
@@ -73,11 +73,11 @@ public class BackEnd : MonoBehaviour
 
 
     /*
-  * 
-  * Función encargada de completar la URL y lanzar Corrutina
-  * 
-  * 
-  * */
+      * 
+      * Función encargada de completar la URL y lanzar Corrutina
+      * 
+      * 
+      * */
     public void EnviarHilo(string tema, string hilo, int numConvers)
     {
         _numConvers = numConvers;
@@ -89,6 +89,7 @@ public class BackEnd : MonoBehaviour
         // ESTE VA
         //url = "http://nerv.legalhackathon.es/"+_tema+"/"+_hilo+"/write.php";
         url = "http://nerv.legalhackathon.es/write.php";
+        url2 = "http://nerv.legalhackathon.es/read.php";
 
         conversacion += "\n Éscúpeme en la boocaaaáaaa";
         Debug.Log(url);
@@ -121,7 +122,10 @@ public class BackEnd : MonoBehaviour
         // ESTE VA
         //WWW www = new WWW(url+"?txt="+ conversacion+"&file="+_numConvers+".txt");
 
-        WWW www = new WWW(url + "?txt=" + conversacion + "&file=" + _numConvers + ".txt&tema=" +_tema+ "&hilo="+_hilo);
+        // ESTE VA MEJOR :)
+        //WWW www = new WWW(url + "?txt=" + conversacion + "&file=" + _numConvers + ".txt&tema=" +_tema+ "&hilo="+_hilo);
+
+        WWW www = new WWW(url2 + "?tema=" + _tema + "&hilo=" + _hilo);
 
         yield return www;
 

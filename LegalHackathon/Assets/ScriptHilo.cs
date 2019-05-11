@@ -21,6 +21,18 @@ public class ScriptHilo : MonoBehaviour
         
     }
 
+    public void AddFavoritos()
+    {
+        //Maulas
+        //GameObject.FindWithTag("GameController").GetComponent<AppController>().AddFav(nameTema,_nombreHilo);
+    }
+
+    public void DeleteFavoritos()
+    {
+        //Maulas
+        //GameObject.FindWithTag("GameController").GetComponent<AppController>().DeleteFav(nameTema,_nombreHilo);
+    }
+
     public void DameDatitosHilo(string nombrehilo)
     {
         this.name = nombrehilo;
