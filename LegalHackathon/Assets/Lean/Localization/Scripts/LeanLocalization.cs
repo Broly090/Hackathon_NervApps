@@ -427,8 +427,14 @@ namespace Lean.Localization
 
 			return null;
 		}
-
-		public LeanTranslation AddTranslation(string title, string language, string text, Object obj = null)
+        public void CambiarLengua()
+        {
+            if (LeanLocalization.CurrentLanguage == "Spanish")
+                LeanLocalization.CurrentLanguage = "English";
+            else
+                LeanLocalization.CurrentLanguage = "Spanish";
+        }
+        public LeanTranslation AddTranslation(string title, string language, string text, Object obj = null)
 		{
 			var phrase = AddPhrase(title);
 
@@ -688,4 +694,6 @@ namespace Lean.Localization
 			return null;
 		}
 	}
+
+    
 }

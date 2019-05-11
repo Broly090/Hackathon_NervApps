@@ -91,7 +91,7 @@ public class BackEnd : MonoBehaviour
         url = "http://nerv.legalhackathon.es/write.php";
         url2 = "http://nerv.legalhackathon.es/read.php";
 
-        conversacion += "\n Éscúpeme en la boocaaaáaaa";
+        conversacion += "\n Abogacía";
         Debug.Log(url);
         StartCoroutine(CorrutinaEnviarHilo());
 

@@ -24,19 +24,20 @@ public class ScriptHilo : MonoBehaviour
     public void AddFavoritos()
     {
         //Maulas
-        //GameObject.FindWithTag("GameController").GetComponent<AppController>().AddFav(nameTema,_nombreHilo);
+        GameObject.FindWithTag("GameController").GetComponent<AppController>().AddFav(nameTema,_nombreHilo);
     }
 
     public void DeleteFavoritos()
     {
         //Maulas
-        //GameObject.FindWithTag("GameController").GetComponent<AppController>().DeleteFav(nameTema,_nombreHilo);
+        GameObject.FindWithTag("GameController").GetComponent<AppController>().DeleteFav(nameTema,_nombreHilo);
     }
 
-    public void DameDatitosHilo(string nombrehilo)
+    public void DameDatitosHilo(string tema ,string nombrehilo, int i)
     {
-        this.name = nombrehilo;
+        this.name = tema+i;
         nameTema = nombrehilo.Substring(0,nombrehilo.Length-1);
+        nombreDelHilo.text = nombrehilo;
     }
 
     public void AbrirHiloSeleccionado()
