@@ -2,21 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using System.Text;
 
 public class BackEnd : MonoBehaviour
 {
 
-    private string tema, hilo, url, conversacion;
+    private string _tema, _hilo, url, conversacion;
+    private int _numConvers;
     private TextAsset conversacionText;
 
     // Start is called before the first frame update
     void Start()
     {
-        RecogerHilo("Penal", "Art.245.2CP");
-
-
-
-        //RecogerHilo("Penal", "Art.245.2CP");
+        RecogerHilo("Penal", "Art.245.2CP", 1);
 
 
     }
@@ -35,10 +33,17 @@ public class BackEnd : MonoBehaviour
      * 
      * 
      * */
-    public void RecogerHilo (string tema, string hilo)
+    public void RecogerHilo (string tema, string hilo, int numConvers)
     {
+        // Asigno variables
+        _tema = tema;
+        _hilo = hilo;
+        _numConvers = numConvers;
 
-        url = "http://46.183.118.202:6969/Legalhackathon/" + tema + "/" + hilo + ".txt";
+        //url = "http://46.183.118.202:6969/Legalhackathon/" + tema + "/" + hilo + ".txt";
+        url = "http://nerv.legalhackathon.es/" + _tema + "/" + _hilo + "/" +_numConvers+".txt";
+
+        
 
         StartCoroutine(CorrutinaRecogerHilo());
 
@@ -63,7 +68,7 @@ public class BackEnd : MonoBehaviour
 
         Debug.Log(conversacion);
 
-        EnviarHilo("Penal", "Art.245.2CP");
+        EnviarHilo(_tema, _hilo, _numConvers);
     }
 
 
@@ -73,14 +78,15 @@ public class BackEnd : MonoBehaviour
   * 
   * 
   * */
-    public void EnviarHilo(string tema, string hilo)
+    public void EnviarHilo(string tema, string hilo, int numConvers)
     {
+        _numConvers = numConvers;
 
         //url = "http://46.183.118.202:6969/Legalhackathon/" + tema + "/" + hilo + ".txt";
         //url = "http://46.183.118.202:6969/Legalhackathon/" + tema + "/write.php";
-        url = "http://46.183.118.202:6969/Legalhackathon/write.php";
+        url = "http://nerv.legalhackathon.es/"+_tema+"/"+_hilo+"/write.php";
 
-        conversacion += "\n Hola vengo a flotar bueno chau";
+        conversacion += "\n Éscúpeme en la boocaaaáaaa";
         Debug.Log(url);
         StartCoroutine(CorrutinaEnviarHilo());
 
@@ -106,7 +112,9 @@ public class BackEnd : MonoBehaviour
         form.AddField("fileName", hilo + ".txt");
         */
 
-        WWW www = new WWW(url+"?txt="+conversacion+"?file="+hilo+".txt");
+        Debug.Log(_hilo);
+
+        WWW www = new WWW(url+"?txt="+ conversacion+"&file="+_numConvers+".txt");
         //WWW www = new WWW(url + "?txt=" + conversacion);
         yield return www;
 
