@@ -1252,7 +1252,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Legal Census
+  m_Text: Censo Letrado
 --- !u!222 &88850591
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1724,7 +1724,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Write your contribution ...
+  m_Text: "Escribe tu contribuci\xF3n ..."
 --- !u!222 &131402144
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2957,7 +2957,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Issue
+  m_Text: Tema
 --- !u!222 &252712531
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3127,7 +3127,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Login
+  m_Text: "Inicio de Sesi\xF3n"
 --- !u!222 &259179161
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5123,7 +5123,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Numero Colegiado
+  m_Text: Valencia
 --- !u!222 &441239666
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6528,12 +6528,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 373119528}
-        m_MethodName: AbrirCenso
+      - m_Target: {fileID: 373119525}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6612,7 +6612,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Password
+  m_Text: "Contrase\xF1a"
 --- !u!222 &532899582
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7552,7 +7552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.019607844, g: 0.2627451, b: 0.4431373, a: 1}
+  m_Color: {r: 0, g: 0, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7647,7 +7647,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: City
+  m_Text: Ciudad
 --- !u!222 &656931624
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7742,7 +7742,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter a name ...
+  m_Text: Introduce un nombre ...
 --- !u!222 &665274531
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8045,7 +8045,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Language
+  m_Text: Idiomas
 --- !u!222 &699231935
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8285,7 +8285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultLanguage: Spanish
   DetectLanguage: 2
-  SaveLanguage: 1
+  SaveLanguage: 0
   languages:
   - name: Spanish
     cultures:
@@ -8398,7 +8398,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Name of thread
+  m_Text: Nombre del hilo
 --- !u!222 &713307955
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9149,7 +9149,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Input
+  m_Text: Aporte
 --- !u!222 &784250648
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10332,7 +10332,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Home
+  m_Text: Inicio
 --- !u!222 &897600843
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12576,7 +12576,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nombre Colegiado
+  m_Text: 36578925
 --- !u!222 &1108403384
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12927,17 +12927,17 @@ PrefabInstance:
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 232.37901
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -244
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 432.75803
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
@@ -12952,7 +12952,7 @@ PrefabInstance:
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
@@ -12962,7 +12962,7 @@ PrefabInstance:
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
@@ -13721,17 +13721,17 @@ PrefabInstance:
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 232.37901
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -92
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 432.75803
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
@@ -13746,7 +13746,7 @@ PrefabInstance:
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
@@ -13756,7 +13756,7 @@ PrefabInstance:
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 295363444720371967, guid: cf6dde44e841fb64da10a756e1e74523,
         type: 3}
@@ -14044,7 +14044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   translations:
   - Language: Spanish
-    Text: Censo Letrados
+    Text: Censo Letrado
     Object: {fileID: 88850588}
   - Language: English
     Text: Legal Census
@@ -14151,7 +14151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1269216879
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14409,7 +14409,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Option A
+  m_Text: "Responsb. Civi\xF1"
 --- !u!222 &1299775206
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14966,7 +14966,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit
+  m_Text: Cerrar
 --- !u!222 &1341105653
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15621,7 +15621,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Create
+  m_Text: Crear
 --- !u!222 &1409724854
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16405,6 +16405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914245418034170063, guid: 7aae5b96b19962745ac3537426848871,
+        type: 3}
+      propertyPath: m_Text
+      value: 123456 Valencia
       objectReference: {fileID: 0}
     - target: {fileID: 3914245418226488240, guid: 7aae5b96b19962745ac3537426848871,
         type: 3}
@@ -17436,7 +17441,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.000023012595}
-  m_SizeDelta: {x: 0, y: 336}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1545536358
 MonoBehaviour:
@@ -19338,7 +19343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0000045072356}
+  m_AnchoredPosition: {x: 0, y: 0.0000067451674}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1694420048
@@ -19704,7 +19709,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Friends
+  m_Text: "Compa\xF1er@s"
 --- !u!222 &1748101655
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19799,7 +19804,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Favourites
+  m_Text: Favoritos
 --- !u!222 &1750162143
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21592,7 +21597,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Cancel
+  m_Text: Cancelar
 --- !u!222 &1985697271
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22117,11 +22122,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: "Responsb. Civi\xF1"
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: Condena en Costas
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: Homicidio impr.
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -22367,7 +22372,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Collegiate number
+  m_Text: "N\xFAmero de colegiado"
 --- !u!222 &2087107608
 CanvasRenderer:
   m_ObjectHideFlags: 0

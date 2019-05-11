@@ -261,6 +261,9 @@ public class AppController : MonoBehaviour
         panelNewHilo.SetActive(false);
         panelFavoritos.SetActive(false);
         panelPrincipal.SetActive(false);
+        panelChatAmigos.SetActive(false);
+        panelAmigos.SetActive(false);
+
     }
 
     public void Inicio()
